@@ -2,6 +2,8 @@
   import Slide from './Slide.svelte';
   import Code from './Code.svelte';
   import Markdown from './Markdown.svelte';
+	import Slides from './Slides.svelte';
+	import Notes from './Notes.svelte';
 </script>
 
 <Slide animate>
@@ -66,3 +68,11 @@
 </Markdown>
 
 <Markdown name="example.md" external />
+
+<Slide>
+  <h1>Slide</h1>
+  <h2>With Notes</h2>
+  <Notes>
+    Here are some notes
+  </Notes>
+</Slide>
