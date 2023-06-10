@@ -10,6 +10,8 @@
 	import 'reveal.js/dist/theme/black.css'
 	import 'reveal.js/plugin/highlight/monokai.css'
 
+  import Presentation from './Presentation.svelte'
+
 	onMount(() => {
 		const deck = new Reveal({
 			plugins: [Markdown, Highlight, Notes],
@@ -28,7 +30,8 @@
 
 <div class="reveal">
   <div class="slides">
-    <section>Slide 1</section>
-    <section>Slide 2</section>
+    <!-- <section>Slide 1</section>
+    <section>Slide 2</section> -->
+    <Presentation />
   </div>
 </div>
