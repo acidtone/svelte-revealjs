@@ -1,7 +1,7 @@
 <script lang="ts">
   import Slide from './Slide.svelte';
-	import Slides from './Slides.svelte';
   import Code from './Code.svelte';
+  import Markdown from './Markdown.svelte';
 </script>
 
 <Slide animate>
@@ -51,3 +51,18 @@
     <div data-id="box-3" class="w-[200px] h-[200px] bg-blue-400"></div>
   </div>
 </Slide>
+
+<Markdown>
+  {`
+    ## Markdown
+    ### Example
+    \`\`\`js [1-2|3|4]
+    let a = 1;
+    let b = 2;
+    let c = x => 1 + 2 + x;
+    c(3);
+    \`\`\`
+  `}
+</Markdown>
+
+<Markdown name="example.md" external />
