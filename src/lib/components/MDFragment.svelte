@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fragments } from '$lib/fragments';
+  import { MdFragments } from '$lib/mdFragments';
 
   export let name = '';
 
@@ -8,7 +8,7 @@
 {#if name}
   <section data-markdown>
     <div data-template>
-      {fragments[name][1]}
+      {MdFragments[name][1]}
     </div>
   </section>
 {/if}

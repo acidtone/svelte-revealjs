@@ -4,6 +4,7 @@
 	import Markdown from '$lib/components/Markdown.svelte';
 	import Notes from '$lib/components/Notes.svelte';		
 	import MdFragment from '$lib/components/MDFragment.svelte';
+	import Fragment from '$lib/components/Fragment.svelte';
 
 </script>
 
@@ -65,6 +66,8 @@
     \`\`\`
   `}
 </Markdown>
+
+<Fragment name="test-code" />
 
 <MdFragment name="git-github" />
 
