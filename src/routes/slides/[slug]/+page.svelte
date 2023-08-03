@@ -12,9 +12,7 @@
 	import '../../../app.postcss';
 
 	export let data;
-
-	console.log(data.module);
-
+	
 	onMount(() => {
 		const deck = new Reveal({
 			plugins: [Markdown, Highlight, Notes],

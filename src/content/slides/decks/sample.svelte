@@ -2,7 +2,8 @@
 	import Slide from '$lib/components/Slide.svelte';
 	import Code from '$lib/components/Code.svelte';
 	import Markdown from '$lib/components/Markdown.svelte';
-	import Notes from '$lib/components/Notes.svelte';
+	import Notes from '$lib/components/Notes.svelte';		
+
 </script>
 
 <Slide animate>
@@ -64,7 +65,7 @@
   `}
 </Markdown>
 
-<Markdown name="example.md" external />
+<Markdown name="git-github" external />
 
 <Slide>
 	<h1>Slide</h1>
