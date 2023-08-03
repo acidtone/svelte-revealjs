@@ -3,6 +3,7 @@
 	import Code from '$lib/components/Code.svelte';
 	import Markdown from '$lib/components/Markdown.svelte';
 	import Notes from '$lib/components/Notes.svelte';		
+	import MdFragment from '$lib/components/MDFragment.svelte';
 
 </script>
 
@@ -65,7 +66,7 @@
   `}
 </Markdown>
 
-<Markdown name="git-github" external />
+<MdFragment name="git-github" />
 
 <Slide>
 	<h1>Slide</h1>
