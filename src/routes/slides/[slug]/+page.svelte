@@ -5,6 +5,7 @@
 	import Highlight from 'reveal.js/plugin/highlight/highlight';
 	import Markdown from 'reveal.js/plugin/markdown/markdown';
 	import Notes from 'reveal.js/plugin/notes/notes';
+	import RevealMath from 'reveal.js/plugin/math/math';
 	import CopyCode from '$lib/plugins/copycode.esm';
 
 	import 'reveal.js/dist/reveal.css';
@@ -18,7 +19,7 @@
 	
 	onMount(() => {
 		const deck = new Reveal({
-			plugins: [Markdown, Highlight, Notes, CopyCode],
+			plugins: [Markdown, Highlight, Notes, CopyCode, RevealMath.KaTeX],
 			autoAnimateEasing: 'ease',
 			autoAnimateDuration: 1,
 			hash: true
