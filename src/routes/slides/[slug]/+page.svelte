@@ -33,6 +33,14 @@
 
 <div class="reveal">
 	<div class="slides">
-		<svelte:component this={data.module} />
+		{#if data.type == 'md'}
+			<section data-markdown>
+				<div data-template>
+					{data.module}
+				</div>
+			</section>
+		{:else}	
+			<svelte:component this={data.module} />
+		{/if}
 	</div>
 </div>

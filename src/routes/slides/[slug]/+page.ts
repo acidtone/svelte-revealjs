@@ -9,10 +9,12 @@ export async function load({ params }) {
   if (decks.hasOwnProperty(params.slug)) {
     content.path = decks[params.slug][0];
     content.module = decks[params.slug][1];
+    content.type = decks[params.slug][2];
   }
 
   return {
     path: content?.path,
-    module: content?.module.default
+    module: content?.module,
+    type: content?.type
   }
 }
